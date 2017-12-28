@@ -54,10 +54,6 @@ a {
   background-color: #fff;
   color: #000;
 }
-#header .mySearch {
-  line-height: 35px;
-  font-weight: normal;
-}
 /* 底部的公共样式 */
 #footer {
   position: fixed;
@@ -99,4 +95,48 @@ body {
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
+}
+#main {
+  background-color: #eee;
+}
+#main .motion > ul > li > a {
+  width: 80px;
+  height: 40px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  display: block;
+}
+#main .motion > ul > li.active > a {
+  background-color: #ccc;
+  color: #006699;
+}
+#main .category-right {
+  left: 80px;
+  top: 40px;
+  overflow: hidden;
+  width: auto;
+  padding: 0 10px;
+}
+#main .category-right .mui-scroll {
+  position: relative;
+}
+#main .category-right .mui-scroll > p {
+  margin: 7px 0 5px 5px;
+}
+#main .category-right .mui-scroll .mui-row .mui-col-xs-4 {
+  background-color: #fff;
+}
+#main .category-right .mui-scroll .mui-row .mui-col-xs-4 > a {
+  display: block;
+  text-align: center;
+}
+#main .category-right .mui-scroll .mui-row .mui-col-xs-4 > a > img {
+  width: 100%;
+}
+#main .category-right .mui-scroll .mui-row .mui-col-xs-4 > a > p {
+  font-size: 12px;
+  color: #1b1b08;
 }

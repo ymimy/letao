@@ -1,3 +1,4 @@
+/* 在主页less文件里面导入base.less公共样式 */
 /* base.less是用来写一些项目都需要的公共样式 */
 /* 定义乐淘主题色 */
 img {
@@ -99,4 +100,60 @@ body {
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
+}
+#main > .search-form {
+  position: relative;
+  padding-right: 70px;
+  padding-left: 15px;
+}
+#main > .search-form input {
+  width: 100%;
+  font-size: 12px;
+  background-color: #fff;
+  border: 1px solid #006699;
+  margin-top: 7px;
+  border-radius: 5px 0 0 5px;
+  height: 33px;
+  text-align: left;
+}
+#main > .search-form button {
+  position: absolute;
+  top: 7px;
+  right: 16px;
+  background-color: #006699;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+}
+#main .searchHistory {
+  padding: 10px;
+}
+#main .searchHistory .search-history-heading {
+  border-bottom: 1px solid #ccc;
+  height: 30px;
+  width: 100%;
+}
+#main .searchHistory .search-history-heading > p {
+  margin-left: 10px;
+  float: left;
+}
+#main .searchHistory .search-history-heading > a {
+  float: right;
+  margin-right: 10px;
+  font-size: 14px;
+}
+#main .searchHistory .search-history-list > ul {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+#main .searchHistory .search-history-list > ul > li {
+  height: 40px;
+  margin: 0;
+  width: 100%;
+}
+#main .searchHistory .search-history-list > ul > li .shouji {
+  font-size: 14px;
+  display: block;
+}
+#main .searchHistory .search-history-list > ul > li .shouji > i {
+  float: right;
 }
